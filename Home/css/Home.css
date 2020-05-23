@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+
+nav{
+    /*algin the content on the same line*/
+    display:flex;
+
+    /*Align the flex items at the center of the container: 
+     property aligns the flexible container's items when 
+     the items do not use all available space on the main-axis (horizontally).
+    */
+    justify-content: space-around;
+
+    background-image: linear-gradient(to left, DarkBlue,Cyan);
+    
+    position: sticky;
+    
+}
+
+.nav-links{
+    /*algin the content on the same line*/
+    display: flex;
+
+    /*set the width of each link*/ 
+    width:30%;
+    
+    justify-content: space-around;
+}
+
+/*Access the li so we can style them*/
+.nav-links li{
+
+    /*remove the bullets on each list*/
+    list-style-type: none;
+}
+
+.nav-links a{
+    /*set the color of each link*/
+    color: gold;
+
+    /*remove the underline on each link*/
+    text-decoration: none;
+
+    /*change the font size on each link*/
+    font-size:14px;
+
+    /*increases or decreases the space between characters in a text.*/
+    letter-spacing: 2x;
+
+    /*sets how thick or thin characters in text should be displayed.*/
+    font-weight: bold;
+}
+
+/*Do somwthing when we hover of the links*/
+.nav-links li a:hover{
+    /*change  color*/
+    color: red;
+}
+
+body{
+    font-family: arial, sans-serif;
+    color: white;
+    background-image: linear-gradient(to right,Cyan,DarkBlue);
+}
+
+/*Margin is outer space of an element, while padding is inner space of an element.
+ Margin is the space outside the border of an element, while padding is the space inside the border of it.*/
+.container{
+
+    /*algin the content on the same line*/
+    display: flex;
+    justify-content: space-around;
+
+    /* margin properties are used to create space around elements, outside of any defined borders.*/
+    margin-top:50px;
+
+}
+
+table{
+
+
+    /*If you want the borders to collapse into one border, add the CSS border-collapse property:*/
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th{
+    background: chartreuse;
+}
+th,td{
+    border: 1px solid #dddddd;
+    
+    text-align: left;
+     /*specifies the space between the cell content and its borders.*/
+    
+     padding: 8px;
+}
+@media screen and (max-width:1024px)
+{
+    .nav-links{
+        width: 60%;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:720px)
+{
+    /*When the screen reaches this resolution display the mobile nav*/
+    .burger{
+        display: block;
+    }
+
+    /*hide the links */
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .nav-links{
+        position: absolute;
+    }

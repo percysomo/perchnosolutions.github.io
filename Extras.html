@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<title>Wedding Web Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+<style>
+    body,
+    h1,
+    h2 {
+        font-family: "Raleway", sans-serif
+    }
+    
+    body,
+    html {
+        height: 100%
+    }
+    
+    p {
+        line-height: 2
+    }
+    
+    .bgimg,
+    .bgimg2 {
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .bgimg {
+        background-image: url("Perchnoimages/wedding_couple.jpg")
+    }
+    
+    .bgimg2 {
+        background-image: url("Perchnoimages/flowers.jpg")
+    }
+    
+    body {
+        background-image: linear-gradient(to right, Red, Purple);
+    }
+    
+    footer {
+        background-image: linear-gradient(to right, Red, Purple);
+    }
+    
+    .bgcolor {
+        background-image: linear-gradient(to right, Red, Yellow);
+    }
+    
+    .bgcolor2 {
+        background-image: linear-gradient(to right, Lime, Cyan);
+    }
+    
+    .color {
+        color: MediumBlue;
+    }
+</style>
+
+<body>
+
+    <!-- Header / Home-->
+    <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+        <div class="w3-display-middle w3-text-white w3-center">
+            <h1 class="w3-jumbo">Mr B.P Mabotja & Ms R.A Matheba</h1>
+            <h2>Are getting married</h2>
+            <h2><b>26.12.2020</b></h2>
+        </div>
+    </header>
+
+    <!-- Navbar (sticky bottom) -->
+    <div class="w3-bottom w3-hide-small">
+        <div class="w3-bar bgcolor w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+            <a href="#home" style="width:25%" class="w3-bar-item w3-button w3-hover-blue">Home</a>
+            <a href="#us" style="width:25%" class="w3-bar-item w3-button w3-hover-blue">Mr Mabotja & Ms Matheba</a>
+            <a href="#wedding" style="width:25%" class="w3-bar-item w3-button w3-hover-blue">Wedding</a>
+            <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-green">RSVP</a>
+        </div>
+    </div>
+
+    <!-- About / Percy And Raesetja -->
+    <div class="w3-container w3-padding-64 bgcolor2 w3-grayscale-min" id="us">
+        <div class="w3-content">
+            <h1 class="w3-center color"><b>Mr B.P Mabotja & Ms A.R Matheba</b></h1>
+            <img class="w3-round w3-grayscale-min" src="Perchnoimages/wedding_couple2.jpg" style="width:100%;margin:32px 0">
+            <p><i>You all know us. And we all know you. We are getting married on the 26th December 2020. We will apprciate your presence. You are all inveted to celebrate our wedding ceremony with us.</i>
+            </p><br>
+            <p class="w3-center"><a href="#wedding" class="w3-button w3-red w3-round w3-padding-large w3-large w3-hover-blue">Wedding Details</a></p>
+        </div>
+    </div>
+
+    <!-- Background photo -->
+    <div class="w3-display-container bgimg2">
+        <div class="w3-display-middle w3-text-white w3-center">
+            <h1 class="w3-jumbo">You Are Invited</h1><br>
+            <h2>Of course..</h2>
+        </div>
+    </div>
+
+    <!-- Wedding information -->
+    <div class="w3-container w3-padding-64 w3-blue w3-grayscale-min w3-center" id="wedding">
+        <div class="w3-content">
+            <h1 class="w3-text-yellow"><b>THE WEDDING</b></h1>
+            <img class="w3-round-large w3-grayscale-min" src="Perchnoimages/wedding_location.jpg" style="width:100%;margin:64px 0">
+            <div class="w3-row">
+                <div class="w3-half">
+                    <h2>When</h2>
+                    <p>Wedding Ceremony - 26th Dec 2020 2:00pm</p>
+                    <p>Reception & Dinner - 27th Dec 2020 5:00pm</p>
+                </div>
+                <div class="w3-half">
+                    <h2>Where</h2>
+                    <p>Leboakgomo, Serobaneng</p>
+                    <p>Moletjie, Moshate</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RSVP section -->
+    <div class="w3-container w3-padding-64 w3-yellow w3-center w3-wide" id="rsvp">
+        <h1>HOPE YOU CAN MAKE IT!</h1>
+        <p class="w3-large">Kindly Respond By 16th December, 2020</p>
+        <p class="w3-xlarge">
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-hover-blue w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+        </p>
+    </div>
+
+    <!-- RSVP modal -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+            <div class="w3-container w3-blue w3-center">
+                <h1 class="w3-wide">CAN YOU COME?</h1>
+                <p>We really hope you can make it.</p>
+                <form>
+                    <input class="w3-input w3-border" type="text" placeholder="Name(s)" name="name">
+                </form>
+                <p><i>Sincerely, Mr Mabotja & Ms Matheba</i></p>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
+                    </div>
+                    <div class="w3-half">
+                        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-padding-16">
+        <p>Powered by <a href="Index.html" title="Percy Somo" target="_blank" class="w3-hover-text-green">Perchno Solutions</a></p>
+    </footer>
+    <div class="w3-hide-small" style="margin-bottom:32px"> </div>
+
+</body>
+
+</html>

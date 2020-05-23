@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Perchno Solutions</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="dnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Bootstrap CSS-->
+<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+<!-- Font Awesome CSS-->
+<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+<!-- Theme CSS - Includes Bootstrap -->
+<link href="cssST/creative.min.css" rel="stylesheet">
+<!-- owl carousel-->
+<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+
+<style>
+    body {
+        font-family: "Lato", sans-serif
+    }
+    
+    .mySlides {
+        display: none
+    }
+    
+    body {
+        background-image: linear-gradient(to right, crimson, navy);
+    }
+    
+    footer {
+        background-image: linear-gradient(to right, Red, rgb(31, 11, 207));
+    }
+    
+    .fa-facebook {
+        background-color: #3B5998;
+        color: white;
+    }
+    
+    .fa-twitter {
+        background-color: #55ACEE;
+        color: white;
+    }
+    
+    .fa-google-plus {
+        background-color: #a51d0b;
+        color: white;
+    }
+    
+    .fa-instagram {
+        background-color: #d6260f;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-teal w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="index.html" class="w3-bar-item w3-text-blue w3-hover-orange w3-button w3-padding-large">Perchno Solutions</a>
+            <a href="AboutUs.html" class="w3-bar-item w3-text-yellow w3-hover-yellow w3-button w3-padding-large w3-hide-small">business Page</a>
+            <a href="Percy Enterprice Login Form.html" class="w3-bar-item w3-text-yellow w3-hover-yellow w3-button w3-padding-large w3-hide-small">Our Gallary Photos </a>
+            <a href="About.html" class="w3-bar-item w3-text-yellow w3-hover-yellow w3-button w3-padding-large w3-hide-small">About Us</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-text-yellow w3-hover-yellow btn" title="More">More Pages <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="Extras.html" class="w3-bar-item w3-text-yellow w3-hover-red w3-button">Wedding Page</a>
+                    <a href="Social.html" class="w3-bar-item w3-text-yellow w3-hover-red w3-button">Media</a>
+                    <a href="Media.html" class="w3-bar-item w3-text-yellow w3-hover-red w3-button">Our Media Gallary</a>
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="w3-padding-large w3-yellow w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="w3-bar-block w3-blue w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="Login.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Login Form</a>
+        <a href="About.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Business Details</a>
+        <a href="Business.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About Us</a>
+    </div>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+        <!-- Automatic Slideshow Images -->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="Perchnoimages/SAC.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-orange w3-padding-32 w3-hide-small">
+                <h3>Johannesburg</h3>
+                <p><b>We had the best time playing at Cosmo City!</b></p>
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="Perchnoimages/Joburg.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-red w3-padding-32 w3-hide-small">
+                <h3>Johannesburg CBD</h3>
+                <p><b>The atmosphere in Johannesburg CBD is Superb.</b></p>
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="Perchnoimages/tokyo.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-yellow w3-padding-32 w3-hide-small">
+                <h3>Cape Town</h3>
+                <p><b>Thank you, Cape Town - What a night we had.</b></p>
+            </div>
+        </div>
+
+        <!-- The Band Section -->
+        <div class="w3-container w3-content w3-text-orange w3-center w3-padding-64" style="max-width:800px" id="festival">
+            <h2 class="w3-wide">Our Team</h2>
+            <p class="w3-opacity"><i>We love music</i></p>
+            <p class="w3-justify">We have created a fictional Music Festival & Tourism website. We are bringing the Whole of South Africa to you, i hope you will enjoy it.</p>
+            <div class="w3-row w3-padding-32">
+                <div class="w3-third">
+                    <p>Raesetja Anna Manaka</p>
+                    <img src="Perchnoimages/SA21.jpg" class="w3-round" alt="Raesetja Manaka" style="width:60%">
+                    <p>CEO</p>
+                </div>
+                <div class="w3-third">
+                    <p>Percy B Soomo</p>
+                    <img src="Perchnoimages/Percy3.jpg" class="w3-round w3-margin-bottom" alt="Percy Soomo" style="width:60%">
+                    <p>Founder, Owner & Programmer</p>
+                </div>
+                <div class="w3-third">
+                    <p>Sanele Nqcobo</p>
+                    <img src="Perchnoimages/Sanele.jpg" class="w3-round w3-margin-bottom" alt="Sanele Nqcobo" style="width:60%">
+                    <p>Database Administrator & Programmer</p>
+                </div>
+                <div class="w3-third">
+                    <p>Kamohelo Theletsane & Tshepiso Serenqe</p>
+                    <img src="Perchnoimages/Kamo.jpg" class="w3-round w3-margin-bottom" alt="Kamohelo Theletsane" style="width:60%">
+                    <p>System Analyst & Accountant</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Tour Section -->
+        <div class="w3-orange" id="tour">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+                <h2 class="w3-wide w3-center">TOUR DATES</h2>
+                <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+
+                <ul class="w3-ul w3-border w3-white w3-text-blue">
+                    <li class="w3-padding">February <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+                    <li class="w3-padding">March <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+                    <li class="w3-padding">April <span class="w3-badge w3-right w3-margin-right">180</span></li>
+                    <li class="w3-padding">June <span class="w3-badge w3-right w3-margin-right">225</span></li>
+                </ul>
+
+                <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="Perchnoimages/Moletji.jpg" alt="Sefateng Community Hall" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Limpopo</b></p>
+                            <p class="w3-opacity">Fri 27 March 2020</p>
+                            <p class="w3-opacity">19:00 - 03:00</p>
+                            <p class="w3-opacity">Categories</p>
+                            <p class="w3-opacity">All</p>
+                            <p>Moletjie Festival.</p>
+                            <button class="btn btn-danger w3-hover-blue w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="Perchnoimages/CPT.jpg" alt="Cape Town" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Cape Town</b></p>
+                            <p class="w3-opacity">Sat 28 March 2020</p>
+                            <p class="w3-opacity">17:00 - 23:00</p>
+                            <p class="w3-opacity">Categories</p>
+                            <p class="w3-opacity">21 years & Older</p>
+                            <p>Cape Town Music Festival.</p>
+                            <button class="btn btn-danger w3-hover-blue w3-margin-bottom" onclick="document.getElementById('ticketModal2').style.display='block'">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="Perchnoimages/Joburg.jpg" alt="Johannesburg" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-white">
+                            <p><b>Johannesburg</b></p>
+                            <p class="w3-opacity">Fri 10 April 2020 - </p>
+                            <p class="w3-opacity">07:00 - 23:00</p>
+                            <p class="w3-opacity">Categories</p>
+                            <p class="w3-opacity">All</p>
+                            <p>Easter Festival.</p>
+                            <button class="btn btn-danger w3-hover-blue w3-margin-bottom" onclick="document.getElementById('ticketModal3').style.display='block'">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="w3-third w3-margin-bottom">
+                        <img src="Perchnoimages/CBD.jpg" alt="Cape Town" style="width:100%" class="w3-hover-opacity">
+                        <div class="w3-container w3-blue">
+                            <p class="w3-text-red"><b>Limpopo</b></p>
+                            <p class="w3-opacity">Tues 16 June 2020</p>
+                            <p class="w3-opacity">07:00 - 23:00</p>
+                            <p class="w3-opacity">Categories</p>
+                            <p class="w3-opacity">All</p>
+                            <p class="w3-text-red">Youth Day.</p>
+                            <button class="btn btn-danger w3-hover-orange w3-margin-bottom" onclick="document.getElementById('ticketModal4').style.display='block'">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ticket Modal -->
+        <div id="ticketModal" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-4">
+                <header class="w3-container w3-teal w3-center w3-padding-32">
+                    <span onclick="document.getElementById('ticketModal').style.display='none'" class="btn w3-teal w3-hover-red w3-xlarge w3-display-topright">×</span>
+                    <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+                </header>
+                <div class="w3-container">
+                    <p><label><i class="fa fa-shopping-cart"></i> Tickets, R65 per person</label></p>
+                    <input class="w3-input w3-border" type="text" placeholder="How many?">
+                    <p><label><i class="fa fa-user"></i> Send To</label></p>
+                    <input class="w3-input w3-border" type="text" placeholder="Enter email">
+                    <button class="btn w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+                    <button class="btn btn-danger w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                    <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ticket Modal -->
+        <div id="ticketModal2" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-4">
+                <header class="w3-container w3-teal w3-center w3-padding-32">
+                    <span onclick="document.getElementById('ticketModal2').style.display='none'" class="btn w3-teal w3-hover-red w3-xlarge w3-display-topright">×</span>
+                    <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+                </header>
+                <div class="w3-container">
+                    <p><label><i class="fa fa-shopping-cart"></i> Tickets, R260 per person</label></p>
+                    <input class="w3-input w3-border" type="text" placeholder="How many?">
+                    <p><label><i class="fa fa-user"></i> Send To</label></p>
+                    <input class="w3-input w3-border" type="text" placeholder="Enter email">
+                    <button class="btn w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+                    <button class="btn btn-danger w3-section" onclick="document.getElementById('ticketModal2').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                    <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ticket Modal -->
+        <div id="ticketModal3" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-4">
+                <header class="w3-container w3-teal w3-center w3-padding-32">
+                    <span onclick="document.getElementById('ticketModal3').style.display='none'" class="btn w3-teal w3-hover-red w3-xlarge w3-display-topright">×</span>
+                    <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+                </header>
+                <div class="w3-container">
+                    <p><label><i class="fa fa-shopping-cart"></i> Tickets, R278 per person</label></p>
+                    <input class="w3-input w3-border" type="text" placeholder="How many?">
+                    <p><label><i class="fa fa-user"></i> Send To</label></p>
+                    <input class="w3-input w3-border" type="text" placeholder="Enter email">
+                    <button class="btn w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+                    <button class="btn btn-danger w3-section" onclick="document.getElementById('ticketModal3').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                    <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ticket Modal -->
+        <div id="ticketModal4" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-4">
+                <header class="w3-container w3-teal w3-center w3-padding-32">
+                    <span onclick="document.getElementById('ticketModal4').style.display='none'" class="btn w3-teal w3-hover-red w3-xlarge w3-display-topright">×</span>
+                    <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+                </header>
+                <div class="w3-container">
+                    <p><label><i class="fa fa-shopping-cart"></i> Tickets, R180 per person</label></p>
+                    <input class="w3-input w3-border" type="text" placeholder="How many?">
+                    <p><label><i class="fa fa-user"></i> Send To</label></p>
+                    <input class="w3-input w3-border" type="text" placeholder="Enter email">
+                    <button class="btn w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+                    <button class="btn btn-danger w3-section" onclick="document.getElementById('ticketModal4').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                    <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Contact Section -->
+        <div class="w3-container w3-content w3-padding-64 w3-text-orange" style="max-width:800px" id="contact">
+            <h2 class="wide w3-center">CONTACT</h2>
+            <p class="opacity w3-center"><i>Fan? Drop a note!</i></p>
+            <div class="row w3-padding-32">
+                <div class="col m6 w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker" style="width:30px"></i> Gauteng, South Africa<br>
+                    <a class="fa fa-phone" href=" tel:+2776 917 2625" style="width:30px"></a> Phone: (+27)76 917 2625<br>
+                    <a class="fa fa-envelope" href="mailto:perchnosolutions@gmail.com" style="width:30px"> </a> Email: perchnosolutions@gmail.com<br>
+                </div>
+            </div>
+            <div class="form">
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+                <form action="" method="post" role="form" class="contactForm">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="name" class="form-control bg-warning" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control bg-warning" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                            <div class="validation"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control bg-warning" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control bg-warning" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                        <div class="validation"></div>
+                    </div>
+                    <div class="text-center"><button class="btn btn-success" type="submit">Send Message</button></div>
+                </form>
+            </div>
+        </div>
+
+        <!-- End Page Content -->
+    </div>
+
+    <!-- Image of location/map -->
+    <img src="Perchnoimages/bs.png" class="w3-image w3-greyscale-min" style="width:100%">
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium w3-text-white">Powered by <a href="Social.html" target="_blank">Perchno Solutions</a></p>
+    </footer>
+
+    <script>
+        // Automatic Slideshow - change image every 4 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000);
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('ticketModal');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('ticketModal2');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('ticketModal3');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('ticketModal4');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

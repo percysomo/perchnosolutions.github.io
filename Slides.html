@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<title>Perchno Solutions Slides</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3css/4/w3.css">
+<link rel="stylesheet" href="maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- Bootstrap CSS-->
+<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+<!-- Font Awesome CSS-->
+<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+<!-- Theme CSS - Includes Bootstrap -->
+<link href="Home/css1/creative.min.css" rel="stylesheet">
+<!-- owl carousel-->
+<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+<!-- Theme CSS - Includes Bootstrap -->
+<link href="css/creative.min.css" rel="stylesheet">
+<style>
+    body {
+        background-image: linear-gradient(to right, Red, Purple);
+    }
+    
+    * {
+        font-family: 'Dancing Script', cursive;
+        color: cyan;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+
+    <div class="w3-content w3-section" style="max-width:500px">
+        <p>Perchno Solutions Gallary Photos</p>
+
+        <img class="mySlides w3-animate-fading" src="Perchnoimages/IT.jpg" style="width:110%">
+        <img class="mySlides w3-animate-fading" src="Perchnoimages/SA12.jpg" style="width:110%">
+        <img class="mySlides w3-animate-fading" src="Perchnoimages/SA7.jpg" style="width:110%">
+        <img class="mySlides w3-animate-fading" src="Perchnoimages/SA10.jpg" style="width:110%">
+        <img class="mySlides w3-animate-fading" src="Perchnoimages/Kamo.jpg" style="width:110%">
+        <img class="mySlides w3-animate-fading" src="Perchnoimages/Sanele.jpg" style="width:110%">
+        <img class="mySlides w3-animate-fading" src="Perchnoimages/SA6.jpg" style="width:110%">
+        <img class="mySlides w3-animate-fading" src="Perchnoimages/18.jpg" style="width:110%">
+        <img class="mySlides w3-animate-fading" src="Perchnoimages/20.jpg" style="width:110%">
+        <img class="mySlides w3-animate-fading" src="Perchnoimages/15.jpg" style="width:110%">
+        <img class="mySlides w3-animate-fading" src="Perchnoimages/19.png" style="width:110%">
+        <img class="mySlides w3-animate-fading" src="Perchnoimages/Comfort.jpg" style="width:110%">
+        <img class="mySlides w3-animate-fading" src="Perchnoimages/SA21.jpg" style="width:110%">
+
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 9000);
+        }
+    </script>
+
+</body>
+
+<footer>
+    <p>Powered by <a href="About.html" target="_blank">Perchno Solutions</a></p>
+</footer>
+
+</html>

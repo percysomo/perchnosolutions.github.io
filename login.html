@@ -1,0 +1,125 @@
+<!doctype html>
+<head>
+    <meta charset="UTF-8"> 
+    <!-- Define a description of your web page:-->
+    <meta name="description" content="Free Web tutorials">
+    <!-- Define the author of a page:-->
+    <meta name="author" content="Boitshoko P. Soomo">
+    <!-- Setting the viewport to make your website look good on all devices:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!--Define the title of the document-->
+    <title>Login</title>
+
+    <!--Link to an external style sheet: style.css-->
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+	<!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="Home/css1/creative.min.css" rel="stylesheet">
+  <!-- owl carousel-->
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
+    <!-- theme stylesheet-->
+
+    <!--Link google fonts from web server-->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+	<style>
+	button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .Loginbtn{
+     background-color:red;
+  }
+  
+  .cancelbtn, .Loginbtn{
+      float: left;
+      width: 50%;
+      text-decoration: none;
+  }
+
+ .cancelbtn:hover{
+     background-color: white;
+     color: black;
+ }
+
+ .Loginbtn:hover{
+    background-color:red;
+    color: black;
+}
+</style>
+    </head>
+
+    <body>
+        <form name="frmname" action="Slides.html" method="POST">
+	
+            <!--Login Box to contain all the elements within-->
+            <div class="login-box">
+                <h1>Login</h1>
+                    <p>Please enter your login details.</p>
+                    <hr>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" login-box-model="text" required >
+					<span login-box-show="frmname.email.$error.email">Not valid email</span>
+
+                    <label for="psw" ><b>Password</b></label>
+                    <input type="password" id="myInput" placeholder="Enter Password" name="psw" required>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+
+                    <div class="clearfix">
+                         <button type="button" class="cancelbtn">Cancel</button></a>
+                        <a href="ProTemplate.html"><button class="Loginbtn" type="submit">Login</a>
+						<button type="button" class="forgotbtn">Forgot<a href="#">password?</a></button>
+                        
+            </div>
+			<p>Click the radio button to toggle between password visibility:</p>
+			<div class="Validate">
+<input type="checkbox" onclick="myFunction()">Show Password
+                    </div>
+			
+			<script>
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+// Get the input field
+var input = document.getElementById("myInput");
+
+// Get the warning text
+var text = document.getElementById("text");
+
+// When the user presses any key on the keyboard, run the function
+input.addEventListener("keyup", function(event) {
+
+  // If "caps lock" is pressed, display the warning text
+  if (event.getModifierState("CapsLock")) {
+    text.style.display = "block";
+  } else {
+    text.style.display = "none"
+  }
+});
+
+</script>
+        </form>
+    </body>
+
+</html>
